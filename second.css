@@ -1,0 +1,202 @@
+#mainlogo {
+    margin: -10px;
+    height: auto;
+    width: 190px;
+}
+
+/* Additional custom styles if necessary */
+.navbar-nav {
+
+    color: black;
+    font-size: large;
+    display: flex;
+    text-align: right;
+    margin-left: 300px;
+    flex: 1;
+    /* Ensure the ul takes full width for justify-content to work */
+
+}
+
+
+.container-fluid {
+    margin-top: 60px;
+    position: fixed;
+    background-color: white;
+    z-index: 1200;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav a:hover {
+    font-weight: bold;
+
+}
+.navbar-nav a.active{
+    border-bottom: 3px orange solid;
+}
+
+
+
+.logo{
+    max-width: 250px;
+}
+
+.d-flex {
+    margin-right: 20px;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.images {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+    margin-top: 100px;
+
+}
+
+.store {
+    max-width: 45%;
+    height: auto;
+}
+
+.phone {
+    max-width: 50%;
+    height: auto;
+}
+
+.wallet {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    max-width: 17%;
+
+    animation: beat 1.5s infinite;
+}
+
+.card-image {
+    position: absolute;
+    bottom: 80px;
+    left: -50px;
+    max-width: 45%;
+    /* Adjust the size as needed */
+    z-index: 1;
+    /* Ensure the card image is on top of the phone image */
+}
+
+.bills-image {
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    max-width: 43%;
+    /* Adjust the size as needed */
+    z-index: 1;
+    /* Ensure the bills image is on top of the phone image */
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.exchange {
+    max-width: 80%;
+
+}
+
+.globe {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    max-width: 20%;
+    z-index: -1;
+
+}
+
+.footerbtn {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    ;
+    border-top: 2px solid;
+    padding: 10px 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width:700px) {
+    .bills-image {
+        position: absolute;
+        bottom: 500px;
+        left: -10px;
+
+        bottom: 80px;
+        left: -40px;
+
+    }
+
+    .r1 {
+        text-align: center;
+    }
+
+    .images {
+        text-align: center;
+    }
+
+    .globe {
+        display: none;
+    }
+
+    .navbar-nav {
+        background-color: #fff;
+    }
+
+    .headerbtn {
+        text-align: center;
+    }
+
+    .footerbtn {
+        display: block;
+    }
+
+
+
+}
